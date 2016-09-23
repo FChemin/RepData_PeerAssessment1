@@ -56,7 +56,7 @@ activitypattern <- aggregate(df2$steps, by=list(df2$interval), mean)
 ggplot(activitypattern, aes(x=activitypattern$Group.1)) + geom_line(aes(y=activitypattern$x)) + ggtitle("Daily Activity Pattern") + labs(x="5-minute interval", y="Number of steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](figure/RD_PA1-unnamed-chunk-4-1.png?raw=true)
 
 ```r
 max.nr.steps <- activitypattern[which.max(activitypattern$x),]$Group.1
