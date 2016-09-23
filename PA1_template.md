@@ -39,7 +39,7 @@ nr.steps <- aggregate(df2$steps, by=list(df2$date), sum)
 ggplot(nr.steps, aes(x=nr.steps$x)) + geom_histogram(colour="black", fill="red", binwidth = 5000) + ggtitle("Frequency of Number of Steps per Day") + labs(x = "Number of steps per day", y = "Frequency")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](figures/unnamed-chunk-2-1.png)<!-- -->
 
 ```r
 meansteps <- as.integer(mean(nr.steps$x))
