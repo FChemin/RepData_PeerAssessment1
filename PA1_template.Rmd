@@ -1,19 +1,22 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
 output: 
-html_document:
-keep_md: true
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r include = FALSE}
 Sys.setlocale("LC_TIME", "C")
+library(knitr)
+library(markdown)
+library(rmarkdown)
 knitr::opts_chunk$set(echo = TRUE, fig.path = 'figure/RD_PA1-')
 ```
 
 ## Loading and preprocessing the data
 
 ```{r}
-library(ggplot2);library(plyr);library(knitr)
+library(ggplot2);library(plyr)
 unzip(zipfile = "activity.zip", exdir = ".", unzip = "internal")
 df <- read.csv("activity.csv", header = TRUE, sep = ",", na.strings = "NA")
 df$date <- as.Date(df$date, "%Y-%m-%d")
