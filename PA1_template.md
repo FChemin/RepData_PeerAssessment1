@@ -43,7 +43,11 @@ ggtitle("Frequency of Number of Steps per Day") +
 labs(x = "Number of steps per day", y = "Frequency")
 ```
 
+<<<<<<< HEAD
 ![](figure/RD_PA1-unnamed-chunk-3-1.png)<!-- -->
+=======
+![](figure/RD_PA1-unnamed-chunk-3-1.png?raw=true)
+>>>>>>> bcdeca48e0ee8b9e1a4339d133945229430a1e2a
 
 ```r
 meansteps <- as.integer(mean(nr.steps$x))
@@ -63,7 +67,11 @@ geom_line(aes(y=activitypattern$x)) + ggtitle("Daily Activity Pattern") +
 labs(x="5-minute interval", y="Number of steps per day")
 ```
 
+<<<<<<< HEAD
 ![](figure/RD_PA1-unnamed-chunk-4-1.png)<!-- -->
+=======
+![](figure/RD_PA1-unnamed-chunk-4-1.png?raw=true)
+>>>>>>> bcdeca48e0ee8b9e1a4339d133945229430a1e2a
 
 ```r
 max.nr.steps <- activitypattern[which.max(activitypattern$x),]$Group.1
