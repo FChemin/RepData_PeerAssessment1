@@ -7,9 +7,6 @@ output:
 
 ```{r include = FALSE}
 Sys.setlocale("LC_TIME", "C")
-library(knitr)
-library(markdown)
-library(rmarkdown)
 knitr::opts_chunk$set(echo = TRUE, fig.path = 'figure/RD_PA1-')
 ```
 

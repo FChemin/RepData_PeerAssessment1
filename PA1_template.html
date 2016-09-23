@@ -190,10 +190,10 @@ mediansteps2 &lt;- as.integer(median(nr.steps2$x))</code></pre>
 <pre class="r"><code>df3$weekdayType &lt;- ifelse(weekdays(df3$date) %in% c(&quot;Saturday&quot;, &quot;Sunday&quot;), 
 &quot;weekend&quot;, &quot;weekday&quot;)
 df3[sample(nrow(df3), 3),]</code></pre>
-<pre><code>##      steps       date interval weekdayType
-## 8354     0 2012-11-27     1120     weekday
-## 5302    17 2012-11-25      710     weekend
-## 6965     0 2012-10-11      930     weekday</code></pre>
+<pre><code>##           steps       date interval weekdayType
+## 12494 0.0000000 2012-11-19     1700     weekday
+## 2786  0.0754717 2012-11-10      345     weekend
+## 14097 0.0000000 2012-10-06     1915     weekend</code></pre>
 <p>Now, the panel plot:</p>
 <pre class="r"><code>activitypattern2 &lt;- aggregate(df3$steps, by=list(df3$interval, df3$weekdayType),
 mean)
