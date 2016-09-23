@@ -137,10 +137,10 @@ df3[sample(nrow(df3), 3),]
 ```
 
 ```
-##           steps       date interval weekdayType
-## 12494 0.0000000 2012-11-19     1700     weekday
-## 2786  0.0754717 2012-11-10      345     weekend
-## 14097 0.0000000 2012-10-06     1915     weekend
+##          steps       date interval weekdayType
+## 12918 68.00000 2012-11-16     1735     weekday
+## 14985 21.16981 2012-11-09     2025     weekday
+## 15698  0.00000 2012-10-21     2125     weekend
 ```
 
 Now, the panel plot:
