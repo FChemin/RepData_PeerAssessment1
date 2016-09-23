@@ -7,7 +7,7 @@ keep_md: true
 
 ```{r include = FALSE}
 Sys.setlocale("LC_TIME", "C")
-knitr::opts_chunk$set(echo = TRUE, fig.path = 'figures/RD_PA1-')
+knitr::opts_chunk$set(echo = TRUE, fig.path = 'figure/RD_PA1-')
 ```
 
 ## Loading and preprocessing the data
